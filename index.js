@@ -31,7 +31,7 @@ rcomb.maybe = function maybe(fn) {
                     return arguments[i];
                 }
             }
-            return fn.apply(this.arguments);
+            return fn.apply(this, arguments);
         }
     };
 };
